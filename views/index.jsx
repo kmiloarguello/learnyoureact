@@ -24,6 +24,7 @@ class TodoList extends Component{
             <Todo title="Hair cut">
               13:00
             </Todo>
+            <Todo title="Learn React">15:00</Todo>
           </tbody>
         </table>
       </div>
@@ -40,6 +41,11 @@ class Todo extends Component{
       </tr>
     )
   }
+}
+
+Todo.propTypes = {
+  title: React.PropTypes.string.isRequired
+
 }
 
 class TodoForm extends Component{
